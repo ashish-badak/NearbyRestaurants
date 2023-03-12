@@ -11,10 +11,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        bootstrap()
         return true
+    }
+    
+    private func bootstrap() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let router = AppBootstrapRouter()
+        router.bootstrap(in: window, root: UINavigationController())
+        self.window = window
     }
 }
 
