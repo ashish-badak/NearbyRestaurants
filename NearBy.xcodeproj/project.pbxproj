@@ -16,6 +16,7 @@
 		1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */; };
 		1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */; };
 		1E109BD229BE17AC00DC8CEB /* NearbyPlacesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */; };
+		1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesModule.swift; sourceTree = "<group>"; };
 		1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesViewController.swift; sourceTree = "<group>"; };
 		1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesRouter.swift; sourceTree = "<group>"; };
+		1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				1E109BBE29BDDC2A00DC8CEB /* Service */,
+				1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */,
 				1E109BD229BE17AC00DC8CEB /* NearbyPlacesRouter.swift in Sources */,
 				1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */,
+				1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */,
 				1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
