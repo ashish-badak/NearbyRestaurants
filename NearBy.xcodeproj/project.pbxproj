@@ -13,6 +13,7 @@
 		1E109B9F29BDBF5500DC8CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E109B9E29BDBF5500DC8CEB /* Assets.xcassets */; };
 		1E109BA229BDBF5500DC8CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E109BA029BDBF5500DC8CEB /* LaunchScreen.storyboard */; };
 		1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCB29BDE15E00DC8CEB /* ModuleProtocols.swift */; };
+		1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1E109BA129BDBF5500DC8CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E109BA329BDBF5500DC8CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E109BCB29BDE15E00DC8CEB /* ModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProtocols.swift; sourceTree = "<group>"; };
+		1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				1E109BCB29BDE15E00DC8CEB /* ModuleProtocols.swift */,
+				1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */,
 			);
 			path = ModuleBuilder;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			files = (
 				1E109B9A29BDBF5300DC8CEB /* ViewController.swift in Sources */,
 				1E109B9629BDBF5300DC8CEB /* AppDelegate.swift in Sources */,
+				1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */,
 				1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
