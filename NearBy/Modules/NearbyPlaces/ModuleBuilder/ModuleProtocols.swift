@@ -8,7 +8,11 @@
 import Foundation
 
 protocol NearbyPlacesViewProtocol: AnyObject {
-    // - TODO: Define view requirements
+    func showLoading()
+    func hideLoading()
+    func showError(message: String)
+    func showNearbyPlaces()
+    func showNewNearbyPlaces(newStartIndex: Int, newEndIndex: Int)
 }
 
 protocol NearbyPlacesInteractorProtocol: AnyObject {
