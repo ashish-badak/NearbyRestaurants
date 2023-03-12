@@ -9,6 +9,6 @@ import Foundation
 
 extension URL {
     enum NP {
-        static var baseURL: URL { URL(string: "https://api.yelp.com/v3")! }
+        static var urlHost: String { "api.yelp.com" }
     }
 }
