@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NearbyPlacesViewController: UIViewController {
+final class NearbyPlacesViewController: UIViewController {
     
     private var presenter: NearbyPlacesPresenterProtocol
     
