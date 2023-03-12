@@ -116,13 +116,13 @@
 		1E109BAE29BDDA4000DC8CEB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1E109BAF29BDDA4F00DC8CEB /* RestaurantListing */,
-				1E109BB029BDDA5F00DC8CEB /* RestaurantDetails */,
+				1E109BAF29BDDA4F00DC8CEB /* NearbyPlaces */,
+				1E109BB029BDDA5F00DC8CEB /* PlaceDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		1E109BAF29BDDA4F00DC8CEB /* RestaurantListing */ = {
+		1E109BAF29BDDA4F00DC8CEB /* NearbyPlaces */ = {
 			isa = PBXGroup;
 			children = (
 				1E109BBF29BDDC3300DC8CEB /* Entity */,
@@ -132,10 +132,10 @@
 				1E109BBA29BDDC0E00DC8CEB /* View */,
 				1E109BB929BDDBFB00DC8CEB /* ModuleBuilder */,
 			);
-			path = RestaurantListing;
+			path = NearbyPlaces;
 			sourceTree = "<group>";
 		};
-		1E109BB029BDDA5F00DC8CEB /* RestaurantDetails */ = {
+		1E109BB029BDDA5F00DC8CEB /* PlaceDetail */ = {
 			isa = PBXGroup;
 			children = (
 				1E109BB429BDDACB00DC8CEB /* Entity */,
@@ -145,7 +145,7 @@
 				1E109BB129BDDAA800DC8CEB /* View */,
 				1E109BB629BDDAFA00DC8CEB /* ModuleBuilder */,
 			);
-			path = RestaurantDetails;
+			path = PlaceDetail;
 			sourceTree = "<group>";
 		};
 		1E109BB129BDDAA800DC8CEB /* View */ = {
