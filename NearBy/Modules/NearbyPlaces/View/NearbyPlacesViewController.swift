@@ -29,3 +29,7 @@ final class NearbyPlacesViewController: UIViewController {
         // - TODO: setup view components
     }
 }
+
+extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
+    
+}
