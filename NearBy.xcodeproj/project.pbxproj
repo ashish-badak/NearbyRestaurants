@@ -17,6 +17,7 @@
 		1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */; };
 		1E109BD229BE17AC00DC8CEB /* NearbyPlacesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */; };
 		1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */; };
+		1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesViewController.swift; sourceTree = "<group>"; };
 		1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesRouter.swift; sourceTree = "<group>"; };
 		1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractor.swift; sourceTree = "<group>"; };
+		1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 		1E109BBC29BDDC1C00DC8CEB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */,
 				1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */,
 				1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */,
+				1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
