@@ -32,6 +32,12 @@
 		1E109BF929BE555F00DC8CEB /* NetworkResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BF829BE555F00DC8CEB /* NetworkResponseValidator.swift */; };
 		1E109BFB29BE568800DC8CEB /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BFA29BE568800DC8CEB /* JSONDecoderExtension.swift */; };
 		1E109BFD29BE571300DC8CEB /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BFC29BE571300DC8CEB /* RestClient.swift */; };
+		1E109BFF29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BFE29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift */; };
+		1E109C0129BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0029BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift */; };
+		1E109C0329BE5A6F00DC8CEB /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0229BE5A6F00DC8CEB /* CodableExtension.swift */; };
+		1E109C0529BE5A8800DC8CEB /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0429BE5A8800DC8CEB /* DataExtension.swift */; };
+		1E109C0729BE5B0600DC8CEB /* NearbyPlacesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0629BE5B0600DC8CEB /* NearbyPlacesAPIService.swift */; };
+		1E109C0A29BE5E0100DC8CEB /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0929BE5E0100DC8CEB /* Business.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		1E109BF829BE555F00DC8CEB /* NetworkResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidator.swift; sourceTree = "<group>"; };
 		1E109BFA29BE568800DC8CEB /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
 		1E109BFC29BE571300DC8CEB /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		1E109BFE29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesQueryParamsProvider.swift; sourceTree = "<group>"; };
+		1E109C0029BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesNetworkRequestComponents.swift; sourceTree = "<group>"; };
+		1E109C0229BE5A6F00DC8CEB /* CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
+		1E109C0429BE5A8800DC8CEB /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		1E109C0629BE5B0600DC8CEB /* NearbyPlacesAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesAPIService.swift; sourceTree = "<group>"; };
+		1E109C0929BE5E0100DC8CEB /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +253,7 @@
 		1E109BB829BDDB6700DC8CEB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1E109C0829BE5DF000DC8CEB /* Models */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -290,6 +303,9 @@
 		1E109BBE29BDDC2A00DC8CEB /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1E109BFE29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift */,
+				1E109C0029BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift */,
+				1E109C0629BE5B0600DC8CEB /* NearbyPlacesAPIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -361,6 +377,8 @@
 				1E109BD929BE1DD800DC8CEB /* UIViewConstraintExtension.swift */,
 				1E109BDC29BE254D00DC8CEB /* URLExtension.swift */,
 				1E109BFA29BE568800DC8CEB /* JSONDecoderExtension.swift */,
+				1E109C0229BE5A6F00DC8CEB /* CodableExtension.swift */,
+				1E109C0429BE5A8800DC8CEB /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,6 +388,14 @@
 			children = (
 			);
 			path = ImageStore;
+			sourceTree = "<group>";
+		};
+		1E109C0829BE5DF000DC8CEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E109C0929BE5E0100DC8CEB /* Business.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,12 +468,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E109C0329BE5A6F00DC8CEB /* CodableExtension.swift in Sources */,
 				1E109BE529BE4DAE00DC8CEB /* HTTPHeader.swift in Sources */,
 				1E109BF129BE541D00DC8CEB /* URLConvertible.swift in Sources */,
+				1E109C0729BE5B0600DC8CEB /* NearbyPlacesAPIService.swift in Sources */,
 				1E109BDA29BE1DD800DC8CEB /* UIViewConstraintExtension.swift in Sources */,
 				1E109B9629BDBF5300DC8CEB /* AppDelegate.swift in Sources */,
 				1E109BD829BE1B1D00DC8CEB /* AppBootstrapRouter.swift in Sources */,
 				1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */,
+				1E109C0529BE5A8800DC8CEB /* DataExtension.swift in Sources */,
 				1E109BFB29BE568800DC8CEB /* JSONDecoderExtension.swift in Sources */,
 				1E109BF329BE551200DC8CEB /* NetworkRequestPerformer.swift in Sources */,
 				1E109BE929BE4F5400DC8CEB /* HTTPHeaderProvider.swift in Sources */,
@@ -455,15 +484,18 @@
 				1E109BE329BE4C0B00DC8CEB /* APIError.swift in Sources */,
 				1E109BF529BE553400DC8CEB /* ResponseMapper.swift in Sources */,
 				1E109BE729BE4EC700DC8CEB /* Constants.swift in Sources */,
+				1E109C0A29BE5E0100DC8CEB /* Business.swift in Sources */,
 				1E109BDD29BE254D00DC8CEB /* URLExtension.swift in Sources */,
 				1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */,
 				1E109BFD29BE571300DC8CEB /* RestClient.swift in Sources */,
 				1E109BF729BE554D00DC8CEB /* NetworkResponseParser.swift in Sources */,
 				1E109BED29BE511300DC8CEB /* NetworkRequestComponents.swift in Sources */,
+				1E109C0129BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift in Sources */,
 				1E109BEF29BE537200DC8CEB /* URLRequestConvertible.swift in Sources */,
 				1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */,
 				1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */,
 				1E109BF929BE555F00DC8CEB /* NetworkResponseValidator.swift in Sources */,
+				1E109BFF29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift in Sources */,
 				1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
