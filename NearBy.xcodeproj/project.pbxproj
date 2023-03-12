@@ -18,6 +18,7 @@
 		1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */; };
 		1E109BD829BE1B1D00DC8CEB /* AppBootstrapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD729BE1B1D00DC8CEB /* AppBootstrapRouter.swift */; };
 		1E109BDA29BE1DD800DC8CEB /* UIViewConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD929BE1DD800DC8CEB /* UIViewConstraintExtension.swift */; };
+		1E109BDD29BE254D00DC8CEB /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BDC29BE254D00DC8CEB /* URLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesPresenter.swift; sourceTree = "<group>"; };
 		1E109BD729BE1B1D00DC8CEB /* AppBootstrapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapRouter.swift; sourceTree = "<group>"; };
 		1E109BD929BE1DD800DC8CEB /* UIViewConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraintExtension.swift; sourceTree = "<group>"; };
+		1E109BDC29BE254D00DC8CEB /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				1E109BD929BE1DD800DC8CEB /* UIViewConstraintExtension.swift */,
+				1E109BDC29BE254D00DC8CEB /* URLExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				1E109BD829BE1B1D00DC8CEB /* AppBootstrapRouter.swift in Sources */,
 				1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */,
 				1E109BD229BE17AC00DC8CEB /* NearbyPlacesRouter.swift in Sources */,
+				1E109BDD29BE254D00DC8CEB /* URLExtension.swift in Sources */,
 				1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */,
 				1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */,
 				1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */,
