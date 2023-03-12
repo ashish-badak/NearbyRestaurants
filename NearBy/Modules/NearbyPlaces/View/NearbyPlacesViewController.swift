@@ -8,6 +8,15 @@
 import UIKit
 
 final class NearbyPlacesViewController: UIViewController {
+    private var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.estimatedRowHeight = 150
+        tableView.rowHeight = UITableView.automaticDimension
+        return tableView
+    }()
     
     private var presenter: NearbyPlacesPresenterProtocol
     
@@ -26,7 +35,8 @@ final class NearbyPlacesViewController: UIViewController {
     }
     
     private func setupView() {
-        // - TODO: setup view components
+        view.addSubview(tableView)
+        tableView.layoutConstraints()
     }
 }
 
