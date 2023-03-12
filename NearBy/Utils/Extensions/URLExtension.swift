@@ -12,3 +12,7 @@ extension URL {
         static var urlHost: String { "api.yelp.com" }
     }
 }
+
+extension URLResponse {
+    var httpResponse: HTTPURLResponse? { self as? HTTPURLResponse }
+}
