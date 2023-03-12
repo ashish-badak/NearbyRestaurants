@@ -12,7 +12,6 @@ protocol NearbyPlacesViewProtocol: AnyObject {
     func hideLoading()
     func showError(message: String)
     func showNearbyPlaces()
-    func showNewNearbyPlaces(newStartIndex: Int, newEndIndex: Int)
 }
 
 protocol NearbyPlacesInteractorProtocol: AnyObject {

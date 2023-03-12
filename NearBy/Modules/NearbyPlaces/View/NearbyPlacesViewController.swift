@@ -59,14 +59,4 @@ extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
             self?.tableView.reloadData()
         }
     }
-    
-    func showNewNearbyPlaces(newStartIndex: Int, newEndIndex: Int) {
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
-            let indexPaths: [IndexPath] = (newStartIndex...newEndIndex).map {
-                IndexPath(row: $0, section: 0)
-            }
-            self.tableView.insertRows(at: indexPaths, with: .automatic)
-        }
-    }
 }
