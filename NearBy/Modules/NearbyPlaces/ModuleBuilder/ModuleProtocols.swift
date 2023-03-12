@@ -15,7 +15,7 @@ protocol NearbyPlacesViewProtocol: AnyObject {
 }
 
 protocol NearbyPlacesInteractorProtocol: AnyObject {
-    // - TODO: Define interactor requirements
+    func fetchNearbyPlaces() async -> Result<[Business], Error>
 }
 
 protocol NearbyPlacesPresenterProtocol: AnyObject {
