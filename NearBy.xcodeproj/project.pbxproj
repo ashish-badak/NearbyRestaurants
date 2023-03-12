@@ -55,6 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				1E109BA929BDC5D100DC8CEB /* ApplicationStartup */,
+				1E109BAB29BDDA2200DC8CEB /* ApplicationNavigation */,
+				1E109BAD29BDDA3A00DC8CEB /* Utils */,
+				1E109BB829BDDB6700DC8CEB /* Common */,
+				1E109BAC29BDDA3000DC8CEB /* Networking */,
+				1E109BAE29BDDA4000DC8CEB /* Modules */,
 				1E109BAA29BDC5F700DC8CEB /* SupportFiles */,
 				1E109B9929BDBF5300DC8CEB /* ViewController.swift */,
 				1E109B9B29BDBF5300DC8CEB /* Main.storyboard */,
@@ -78,6 +83,241 @@
 				1E109BA329BDBF5500DC8CEB /* Info.plist */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		1E109BAB29BDDA2200DC8CEB /* ApplicationNavigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicationNavigation;
+			sourceTree = "<group>";
+		};
+		1E109BAC29BDDA3000DC8CEB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BC329BDDD3000DC8CEB /* RequestData */,
+				1E109BC029BDDC5300DC8CEB /* RequestPerformers */,
+				1E109BC129BDDC5800DC8CEB /* ResponseHandlers */,
+				1E109BC229BDDC5E00DC8CEB /* Errors */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1E109BAD29BDDA3A00DC8CEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BC829BDDE5200DC8CEB /* ImageStore */,
+				1E109BC629BDDE3200DC8CEB /* ViewReusability */,
+				1E109BC729BDDE3F00DC8CEB /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1E109BAE29BDDA4000DC8CEB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BAF29BDDA4F00DC8CEB /* RestaurantListing */,
+				1E109BB029BDDA5F00DC8CEB /* RestaurantDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1E109BAF29BDDA4F00DC8CEB /* RestaurantListing */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BBF29BDDC3300DC8CEB /* Entity */,
+				1E109BBD29BDDC2300DC8CEB /* Interactor */,
+				1E109BBC29BDDC1C00DC8CEB /* Presenter */,
+				1E109BBB29BDDC1400DC8CEB /* Router */,
+				1E109BBA29BDDC0E00DC8CEB /* View */,
+				1E109BB929BDDBFB00DC8CEB /* ModuleBuilder */,
+			);
+			path = RestaurantListing;
+			sourceTree = "<group>";
+		};
+		1E109BB029BDDA5F00DC8CEB /* RestaurantDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BB429BDDACB00DC8CEB /* Entity */,
+				1E109BB329BDDAC300DC8CEB /* Interactor */,
+				1E109BB229BDDAB900DC8CEB /* Presenter */,
+				1E109BB529BDDAE400DC8CEB /* Router */,
+				1E109BB129BDDAA800DC8CEB /* View */,
+				1E109BB629BDDAFA00DC8CEB /* ModuleBuilder */,
+			);
+			path = RestaurantDetails;
+			sourceTree = "<group>";
+		};
+		1E109BB129BDDAA800DC8CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E109BB229BDDAB900DC8CEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1E109BB329BDDAC300DC8CEB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BB729BDDB0D00DC8CEB /* Service */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1E109BB429BDDACB00DC8CEB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1E109BB529BDDAE400DC8CEB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1E109BB629BDDAFA00DC8CEB /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		1E109BB729BDDB0D00DC8CEB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1E109BB829BDDB6700DC8CEB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1E109BB929BDDBFB00DC8CEB /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		1E109BBA29BDDC0E00DC8CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E109BBB29BDDC1400DC8CEB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1E109BBC29BDDC1C00DC8CEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1E109BBD29BDDC2300DC8CEB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BBE29BDDC2A00DC8CEB /* Service */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1E109BBE29BDDC2A00DC8CEB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1E109BBF29BDDC3300DC8CEB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1E109BC029BDDC5300DC8CEB /* RequestPerformers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestPerformers;
+			sourceTree = "<group>";
+		};
+		1E109BC129BDDC5800DC8CEB /* ResponseHandlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseHandlers;
+			sourceTree = "<group>";
+		};
+		1E109BC229BDDC5E00DC8CEB /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		1E109BC329BDDD3000DC8CEB /* RequestData */ = {
+			isa = PBXGroup;
+			children = (
+				1E109BC529BDDDA000DC8CEB /* Encoders */,
+				1E109BC429BDDD9600DC8CEB /* Headers */,
+			);
+			path = RequestData;
+			sourceTree = "<group>";
+		};
+		1E109BC429BDDD9600DC8CEB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		1E109BC529BDDDA000DC8CEB /* Encoders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encoders;
+			sourceTree = "<group>";
+		};
+		1E109BC629BDDE3200DC8CEB /* ViewReusability */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewReusability;
+			sourceTree = "<group>";
+		};
+		1E109BC729BDDE3F00DC8CEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E109BC829BDDE5200DC8CEB /* ImageStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
