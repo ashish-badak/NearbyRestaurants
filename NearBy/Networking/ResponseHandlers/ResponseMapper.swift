@@ -20,7 +20,7 @@ struct JSONResponseMapper<Output: Decodable>: ResponseMapper {
     typealias Input = Data
     private let decoder: JSONDecoder
     
-    init(decoder: JSONDecoder = .default) {
+    init(decoder: JSONDecoder = JSONDecoder()) {
         self.decoder = decoder
     }
     

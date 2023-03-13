@@ -9,7 +9,7 @@ import Foundation
 
 
 struct NearbyPlacesNetworkRequestComponents: GetNetworkRequestComponents {
-    var path: String { "v3/businesses/search" }
+    var path: String { "/v3/businesses/search" }
     var parameters: Parameters {
         let queryParamsProvider = PRListAPIRequestQueryParams(
             placeType: placeType,

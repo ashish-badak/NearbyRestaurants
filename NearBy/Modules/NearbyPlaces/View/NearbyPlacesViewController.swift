@@ -32,6 +32,7 @@ final class NearbyPlacesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        presenter.viewDidLoad()
     }
     
     private func setupView() {
