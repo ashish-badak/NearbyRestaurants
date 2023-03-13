@@ -52,6 +52,8 @@
 		1E454ED329BF666D00BA718C /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454ED229BF666D00BA718C /* CardTableViewCell.swift */; };
 		1E454ED529BF675B00BA718C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454ED429BF675B00BA718C /* ReusableView.swift */; };
 		1E454ED729BF677200BA718C /* ReusableTableViewDequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454ED629BF677200BA718C /* ReusableTableViewDequeuing.swift */; };
+		1E454ED929BF703D00BA718C /* ActivityStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */; };
+		1E454EDB29BF708200BA718C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454EDA29BF708200BA718C /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		1E454ED229BF666D00BA718C /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		1E454ED429BF675B00BA718C /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		1E454ED629BF677200BA718C /* ReusableTableViewDequeuing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewDequeuing.swift; sourceTree = "<group>"; };
+		1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStateViewController.swift; sourceTree = "<group>"; };
+		1E454EDA29BF708200BA718C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +419,7 @@
 				1E454EBC29BF60A400BA718C /* UIColorExtension.swift */,
 				1E454EC329BF615B00BA718C /* UIFontExtension.swift */,
 				1E454ECD29BF62D000BA718C /* UIImageViewExtension.swift */,
+				1E454EDA29BF708200BA718C /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 			children = (
 				1E454ED029BF662B00BA718C /* CardView.swift */,
 				1E454ED229BF666D00BA718C /* CardTableViewCell.swift */,
+				1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,7 +534,9 @@
 			files = (
 				1E109C0329BE5A6F00DC8CEB /* CodableExtension.swift in Sources */,
 				1E109BE529BE4DAE00DC8CEB /* HTTPHeader.swift in Sources */,
+				1E454EDB29BF708200BA718C /* UIViewControllerExtension.swift in Sources */,
 				1E454EC429BF615B00BA718C /* UIFontExtension.swift in Sources */,
+				1E454ED929BF703D00BA718C /* ActivityStateViewController.swift in Sources */,
 				1E109BF129BE541D00DC8CEB /* URLConvertible.swift in Sources */,
 				1E454EC029BF611E00BA718C /* ShadowStyle.swift in Sources */,
 				1E454EC629BF625400BA718C /* ImageCache.swift in Sources */,
