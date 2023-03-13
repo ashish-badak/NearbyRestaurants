@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NearbyPlaces: Decodable {
+struct NearbyBusinesses: Decodable {
     let businesses: [Business]
 }
 

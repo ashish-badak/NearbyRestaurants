@@ -9,7 +9,7 @@ import UIKit
 
 final class AppBootstrapRouter {
     func bootstrap(in window: UIWindow?, root: UINavigationController) {
-        let module = NearbyPlacesModule()
+        let module = NearbyBusinessesModule()
         let controller = module.build(navigationController: root)
         root.viewControllers = [controller]
         controller.title = "Nearby Restaurants"

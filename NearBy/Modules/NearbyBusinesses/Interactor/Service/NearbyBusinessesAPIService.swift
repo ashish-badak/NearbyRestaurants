@@ -1,5 +1,5 @@
 //
-//  NearbyPlacesAPIService.swift
+//  NearbyBusinessesAPIService.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct NearbyPlacesAPIService {
+struct NearbyBusinessesAPIService {
     private let restClient: RestClient
     
     init(restClient: RestClient = .shared) {
         self.restClient = restClient
     }
     
-    func fetchNearbyPlaces(
+    func fetchNearbyBusinesses(
         placeType: String?,
         latitude: Double?,
         longitude: Double?
-    ) async -> Result<NearbyPlaces, Error> {
-        let requestComponents = NearbyPlacesNetworkRequestComponents(
+    ) async -> Result<NearbyBusinesses, Error> {
+        let requestComponents = NearbyBusinessesNetworkRequestComponents(
             placeType: placeType,
             latitude: latitude,
             longitude: longitude

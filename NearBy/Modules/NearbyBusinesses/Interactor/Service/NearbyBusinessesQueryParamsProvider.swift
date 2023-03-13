@@ -1,5 +1,5 @@
 //
-//  NearbyPlacesQueryParamsProvider.swift
+//  NearbyBusinessesQueryParamsProvider.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PRListAPIRequestQueryParams: Encodable {
+final class NearbyBusinessesQueryParamsProvider: Encodable {
     let placeType: String?
     let latitude: Double?
     let longitude: Double?

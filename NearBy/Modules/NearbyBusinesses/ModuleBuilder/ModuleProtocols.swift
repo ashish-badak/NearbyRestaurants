@@ -7,25 +7,25 @@
 
 import Foundation
 
-protocol NearbyPlacesViewProtocol: AnyObject {
+protocol NearbyBusinessesViewProtocol: AnyObject {
     func showLoading()
     func hideLoading()
     func showError(message: String)
-    func showNearbyPlaces()
+    func showNearbyBusinesses()
 }
 
-protocol NearbyPlacesInteractorProtocol: AnyObject {
-    func fetchNearbyPlaces() async -> Result<[Business], Error>
+protocol NearbyBusinessesInteractorProtocol: AnyObject {
+    func fetchNearbyBusinesses() async -> Result<[Business], Error>
     func getBusiness(atIndex index: Int) -> Business
 }
 
-protocol NearbyPlacesPresenterProtocol: AnyObject {
+protocol NearbyBusinessesPresenterProtocol: AnyObject {
     func viewDidLoad()
     func placeDidTap(at index: Int)
     func getNumberOfViewModels() -> Int
     func getViewModel(atIndex index: Int) -> NearbyPlaceViewModel
 }
 
-protocol NearbyPlacesRouterProtocol: AnyObject {
+protocol NearbyBusinessesRouterProtocol: AnyObject {
     func routeToPlaceDetailsScreen(businessId: String, businessName: String)
 }

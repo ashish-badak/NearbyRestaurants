@@ -11,11 +11,11 @@
 		1E109B9F29BDBF5500DC8CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E109B9E29BDBF5500DC8CEB /* Assets.xcassets */; };
 		1E109BA229BDBF5500DC8CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E109BA029BDBF5500DC8CEB /* LaunchScreen.storyboard */; };
 		1E109BCC29BDE15E00DC8CEB /* ModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCB29BDE15E00DC8CEB /* ModuleProtocols.swift */; };
-		1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */; };
-		1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */; };
-		1E109BD229BE17AC00DC8CEB /* NearbyPlacesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */; };
-		1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */; };
-		1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */; };
+		1E109BCE29BDE2F600DC8CEB /* NearbyBusinessesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCD29BDE2F600DC8CEB /* NearbyBusinessesModule.swift */; };
+		1E109BD029BDE39B00DC8CEB /* NearbyBusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BCF29BDE39B00DC8CEB /* NearbyBusinessesViewController.swift */; };
+		1E109BD229BE17AC00DC8CEB /* NearbyBusinessesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD129BE17AC00DC8CEB /* NearbyBusinessesRouter.swift */; };
+		1E109BD429BE184F00DC8CEB /* NearbyBusinessesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD329BE184F00DC8CEB /* NearbyBusinessesInteractor.swift */; };
+		1E109BD629BE18C400DC8CEB /* NearbyBusinessesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD529BE18C400DC8CEB /* NearbyBusinessesPresenter.swift */; };
 		1E109BD829BE1B1D00DC8CEB /* AppBootstrapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD729BE1B1D00DC8CEB /* AppBootstrapRouter.swift */; };
 		1E109BDA29BE1DD800DC8CEB /* UIViewConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BD929BE1DD800DC8CEB /* UIViewConstraintExtension.swift */; };
 		1E109BDD29BE254D00DC8CEB /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BDC29BE254D00DC8CEB /* URLExtension.swift */; };
@@ -31,11 +31,11 @@
 		1E109BF729BE554D00DC8CEB /* NetworkResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BF629BE554D00DC8CEB /* NetworkResponseParser.swift */; };
 		1E109BF929BE555F00DC8CEB /* NetworkResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BF829BE555F00DC8CEB /* NetworkResponseValidator.swift */; };
 		1E109BFD29BE571300DC8CEB /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BFC29BE571300DC8CEB /* RestClient.swift */; };
-		1E109BFF29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BFE29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift */; };
-		1E109C0129BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0029BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift */; };
+		1E109BFF29BE58AC00DC8CEB /* NearbyBusinessesQueryParamsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109BFE29BE58AC00DC8CEB /* NearbyBusinessesQueryParamsProvider.swift */; };
+		1E109C0129BE59A700DC8CEB /* NearbyBusinessesNetworkRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0029BE59A700DC8CEB /* NearbyBusinessesNetworkRequestComponents.swift */; };
 		1E109C0329BE5A6F00DC8CEB /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0229BE5A6F00DC8CEB /* CodableExtension.swift */; };
 		1E109C0529BE5A8800DC8CEB /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0429BE5A8800DC8CEB /* DataExtension.swift */; };
-		1E109C0729BE5B0600DC8CEB /* NearbyPlacesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0629BE5B0600DC8CEB /* NearbyPlacesAPIService.swift */; };
+		1E109C0729BE5B0600DC8CEB /* NearbyBusinessesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0629BE5B0600DC8CEB /* NearbyBusinessesAPIService.swift */; };
 		1E109C0A29BE5E0100DC8CEB /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0929BE5E0100DC8CEB /* Business.swift */; };
 		1E109C0C29BE64A600DC8CEB /* NearbyPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E109C0B29BE64A600DC8CEB /* NearbyPlaceViewModel.swift */; };
 		1E3B4A7429BF7F99000124F6 /* PlaceDetailsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B4A7329BF7F99000124F6 /* PlaceDetailsModuleProtocols.swift */; };
@@ -82,11 +82,11 @@
 		1E109BA129BDBF5500DC8CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E109BA329BDBF5500DC8CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E109BCB29BDE15E00DC8CEB /* ModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProtocols.swift; sourceTree = "<group>"; };
-		1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesModule.swift; sourceTree = "<group>"; };
-		1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesViewController.swift; sourceTree = "<group>"; };
-		1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesRouter.swift; sourceTree = "<group>"; };
-		1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractor.swift; sourceTree = "<group>"; };
-		1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesPresenter.swift; sourceTree = "<group>"; };
+		1E109BCD29BDE2F600DC8CEB /* NearbyBusinessesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesModule.swift; sourceTree = "<group>"; };
+		1E109BCF29BDE39B00DC8CEB /* NearbyBusinessesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesViewController.swift; sourceTree = "<group>"; };
+		1E109BD129BE17AC00DC8CEB /* NearbyBusinessesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesRouter.swift; sourceTree = "<group>"; };
+		1E109BD329BE184F00DC8CEB /* NearbyBusinessesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesInteractor.swift; sourceTree = "<group>"; };
+		1E109BD529BE18C400DC8CEB /* NearbyBusinessesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesPresenter.swift; sourceTree = "<group>"; };
 		1E109BD729BE1B1D00DC8CEB /* AppBootstrapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapRouter.swift; sourceTree = "<group>"; };
 		1E109BD929BE1DD800DC8CEB /* UIViewConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraintExtension.swift; sourceTree = "<group>"; };
 		1E109BDC29BE254D00DC8CEB /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
@@ -102,11 +102,11 @@
 		1E109BF629BE554D00DC8CEB /* NetworkResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseParser.swift; sourceTree = "<group>"; };
 		1E109BF829BE555F00DC8CEB /* NetworkResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidator.swift; sourceTree = "<group>"; };
 		1E109BFC29BE571300DC8CEB /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
-		1E109BFE29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesQueryParamsProvider.swift; sourceTree = "<group>"; };
-		1E109C0029BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesNetworkRequestComponents.swift; sourceTree = "<group>"; };
+		1E109BFE29BE58AC00DC8CEB /* NearbyBusinessesQueryParamsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesQueryParamsProvider.swift; sourceTree = "<group>"; };
+		1E109C0029BE59A700DC8CEB /* NearbyBusinessesNetworkRequestComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesNetworkRequestComponents.swift; sourceTree = "<group>"; };
 		1E109C0229BE5A6F00DC8CEB /* CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
 		1E109C0429BE5A8800DC8CEB /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
-		1E109C0629BE5B0600DC8CEB /* NearbyPlacesAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesAPIService.swift; sourceTree = "<group>"; };
+		1E109C0629BE5B0600DC8CEB /* NearbyBusinessesAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBusinessesAPIService.swift; sourceTree = "<group>"; };
 		1E109C0929BE5E0100DC8CEB /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		1E109C0B29BE64A600DC8CEB /* NearbyPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlaceViewModel.swift; sourceTree = "<group>"; };
 		1E3B4A7329BF7F99000124F6 /* PlaceDetailsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsModuleProtocols.swift; sourceTree = "<group>"; };
@@ -239,13 +239,13 @@
 		1E109BAE29BDDA4000DC8CEB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1E109BAF29BDDA4F00DC8CEB /* NearbyPlaces */,
+				1E109BAF29BDDA4F00DC8CEB /* NearbyBusinesses */,
 				1E109BB029BDDA5F00DC8CEB /* PlaceDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		1E109BAF29BDDA4F00DC8CEB /* NearbyPlaces */ = {
+		1E109BAF29BDDA4F00DC8CEB /* NearbyBusinesses */ = {
 			isa = PBXGroup;
 			children = (
 				1E109BBF29BDDC3300DC8CEB /* Entity */,
@@ -255,7 +255,7 @@
 				1E109BBA29BDDC0E00DC8CEB /* View */,
 				1E109BB929BDDBFB00DC8CEB /* ModuleBuilder */,
 			);
-			path = NearbyPlaces;
+			path = NearbyBusinesses;
 			sourceTree = "<group>";
 		};
 		1E109BB029BDDA5F00DC8CEB /* PlaceDetails */ = {
@@ -347,7 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				1E109BCB29BDE15E00DC8CEB /* ModuleProtocols.swift */,
-				1E109BCD29BDE2F600DC8CEB /* NearbyPlacesModule.swift */,
+				1E109BCD29BDE2F600DC8CEB /* NearbyBusinessesModule.swift */,
 			);
 			path = ModuleBuilder;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 		1E109BBA29BDDC0E00DC8CEB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1E109BCF29BDE39B00DC8CEB /* NearbyPlacesViewController.swift */,
+				1E109BCF29BDE39B00DC8CEB /* NearbyBusinessesViewController.swift */,
 				1E454EBA29BF5F6800BA718C /* NearbyPlaceView.swift */,
 			);
 			path = View;
@@ -364,7 +364,7 @@
 		1E109BBB29BDDC1400DC8CEB /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				1E109BD129BE17AC00DC8CEB /* NearbyPlacesRouter.swift */,
+				1E109BD129BE17AC00DC8CEB /* NearbyBusinessesRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 		1E109BBC29BDDC1C00DC8CEB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1E109BD529BE18C400DC8CEB /* NearbyPlacesPresenter.swift */,
+				1E109BD529BE18C400DC8CEB /* NearbyBusinessesPresenter.swift */,
 				1E109C0B29BE64A600DC8CEB /* NearbyPlaceViewModel.swift */,
 			);
 			path = Presenter;
@@ -382,7 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				1E109BBE29BDDC2A00DC8CEB /* Service */,
-				1E109BD329BE184F00DC8CEB /* NearbyPlacesInteractor.swift */,
+				1E109BD329BE184F00DC8CEB /* NearbyBusinessesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -390,9 +390,9 @@
 		1E109BBE29BDDC2A00DC8CEB /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1E109BFE29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift */,
-				1E109C0029BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift */,
-				1E109C0629BE5B0600DC8CEB /* NearbyPlacesAPIService.swift */,
+				1E109BFE29BE58AC00DC8CEB /* NearbyBusinessesQueryParamsProvider.swift */,
+				1E109C0029BE59A700DC8CEB /* NearbyBusinessesNetworkRequestComponents.swift */,
+				1E109C0629BE5B0600DC8CEB /* NearbyBusinessesAPIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -617,13 +617,13 @@
 				1E454EC029BF611E00BA718C /* ShadowStyle.swift in Sources */,
 				1E454EC629BF625400BA718C /* ImageCache.swift in Sources */,
 				1E3B4A7629BF7FC6000124F6 /* PlaceDetailInteractor.swift in Sources */,
-				1E109C0729BE5B0600DC8CEB /* NearbyPlacesAPIService.swift in Sources */,
+				1E109C0729BE5B0600DC8CEB /* NearbyBusinessesAPIService.swift in Sources */,
 				1E3B4A7829BF85F5000124F6 /* OperatingHours.swift in Sources */,
 				1E109BDA29BE1DD800DC8CEB /* UIViewConstraintExtension.swift in Sources */,
 				1E3B4A8729BFA179000124F6 /* PlaceOperatingHoursViewModel.swift in Sources */,
 				1E109B9629BDBF5300DC8CEB /* AppDelegate.swift in Sources */,
 				1E109BD829BE1B1D00DC8CEB /* AppBootstrapRouter.swift in Sources */,
-				1E109BD029BDE39B00DC8CEB /* NearbyPlacesViewController.swift in Sources */,
+				1E109BD029BDE39B00DC8CEB /* NearbyBusinessesViewController.swift in Sources */,
 				1E3B4A8D29BFA7C8000124F6 /* PlaceDetailsBannerView.swift in Sources */,
 				1E454ECE29BF62D000BA718C /* UIImageViewExtension.swift in Sources */,
 				1E109C0529BE5A8800DC8CEB /* DataExtension.swift in Sources */,
@@ -631,7 +631,7 @@
 				1E454ED129BF662B00BA718C /* CardView.swift in Sources */,
 				1E109BE929BE4F5400DC8CEB /* HTTPHeaderProvider.swift in Sources */,
 				1E454EC229BF613100BA718C /* TextStyle.swift in Sources */,
-				1E109BD229BE17AC00DC8CEB /* NearbyPlacesRouter.swift in Sources */,
+				1E109BD229BE17AC00DC8CEB /* NearbyBusinessesRouter.swift in Sources */,
 				1E109BE329BE4C0B00DC8CEB /* APIError.swift in Sources */,
 				1E3B4A7C29BF9F1C000124F6 /* DateFormatter.swift in Sources */,
 				1E3B4A7A29BF8706000124F6 /* WeeklySchedule.swift in Sources */,
@@ -640,19 +640,19 @@
 				1E109C0A29BE5E0100DC8CEB /* Business.swift in Sources */,
 				1E109BDD29BE254D00DC8CEB /* URLExtension.swift in Sources */,
 				1E454EBD29BF60A400BA718C /* UIColorExtension.swift in Sources */,
-				1E109BCE29BDE2F600DC8CEB /* NearbyPlacesModule.swift in Sources */,
+				1E109BCE29BDE2F600DC8CEB /* NearbyBusinessesModule.swift in Sources */,
 				1E109C0C29BE64A600DC8CEB /* NearbyPlaceViewModel.swift in Sources */,
 				1E109BFD29BE571300DC8CEB /* RestClient.swift in Sources */,
 				1E109BF729BE554D00DC8CEB /* NetworkResponseParser.swift in Sources */,
 				1E109BED29BE511300DC8CEB /* NetworkRequestComponents.swift in Sources */,
-				1E109C0129BE59A700DC8CEB /* NearbyPlacesNetworkRequestComponents.swift in Sources */,
+				1E109C0129BE59A700DC8CEB /* NearbyBusinessesNetworkRequestComponents.swift in Sources */,
 				1E454EBB29BF5F6800BA718C /* NearbyPlaceView.swift in Sources */,
 				1E454ECA29BF629400BA718C /* ImageResponseParser.swift in Sources */,
 				1E109BEF29BE537200DC8CEB /* URLRequestConvertible.swift in Sources */,
 				1E454EED29BF7C0900BA718C /* PlaceDetailsAPIService.swift in Sources */,
 				1E454ED529BF675B00BA718C /* ReusableView.swift in Sources */,
 				1E454EE729BF740600BA718C /* PlaceDetailsModule.swift in Sources */,
-				1E109BD429BE184F00DC8CEB /* NearbyPlacesInteractor.swift in Sources */,
+				1E109BD429BE184F00DC8CEB /* NearbyBusinessesInteractor.swift in Sources */,
 				1E454EEB29BF7B3400BA718C /* PlaceDetailsNetworkRequestComponents.swift in Sources */,
 				1E3B4A8129BFA145000124F6 /* PlaceDetailBannerViewModel.swift in Sources */,
 				1E454ED729BF677200BA718C /* ReusableTableViewDequeuing.swift in Sources */,
@@ -661,14 +661,14 @@
 				1E109BF929BE555F00DC8CEB /* NetworkResponseValidator.swift in Sources */,
 				1E3B4A8F29BFA7D8000124F6 /* PlaceDetailsInfoView.swift in Sources */,
 				1E3B4A8929BFA75A000124F6 /* TableViewCell.swift in Sources */,
-				1E109BFF29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift in Sources */,
+				1E109BFF29BE58AC00DC8CEB /* NearbyBusinessesQueryParamsProvider.swift in Sources */,
 				1E3B4A7429BF7F99000124F6 /* PlaceDetailsModuleProtocols.swift in Sources */,
 				1E454EE029BF71CD00BA718C /* PlaceDetailsViewController.swift in Sources */,
 				1E454ECC29BF62A300BA718C /* ImageStore.swift in Sources */,
 				1E454EDE29BF70C400BA718C /* ErrorStateViewController.swift in Sources */,
 				1E454EC829BF626B00BA718C /* ImageDownloader.swift in Sources */,
 				1E3B4A8329BFA158000124F6 /* PlaceContactInfoViewModel.swift in Sources */,
-				1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */,
+				1E109BD629BE18C400DC8CEB /* NearbyBusinessesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

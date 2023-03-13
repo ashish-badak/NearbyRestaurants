@@ -1,5 +1,5 @@
 //
-//  NearbyPlacesViewController.swift
+//  NearbyBusinessesViewController.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 12/03/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NearbyPlacesViewController: UIViewController {
+final class NearbyBusinessesViewController: UIViewController {
     private var tableView: UITableView = {
         let tableView = UITableView()
         tableView.showsVerticalScrollIndicator = false
@@ -22,9 +22,9 @@ final class NearbyPlacesViewController: UIViewController {
     
     private lazy var activityIndicatorView =  ActivityStateViewController()
 
-    private var presenter: NearbyPlacesPresenterProtocol
+    private var presenter: NearbyBusinessesPresenterProtocol
     
-    init(presenter: NearbyPlacesPresenterProtocol) {
+    init(presenter: NearbyBusinessesPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -47,7 +47,7 @@ final class NearbyPlacesViewController: UIViewController {
     }
 }
 
-extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
+extension NearbyBusinessesViewController: NearbyBusinessesViewProtocol {
     func showLoading() {
         DispatchQueue.main.async {
             self.add(childViewController: self.activityIndicatorView, parentView: self.view)
@@ -71,14 +71,14 @@ extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
         }
     }
     
-    func showNearbyPlaces() {
+    func showNearbyBusinesses() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
         }
     }
 }
 
-extension NearbyPlacesViewController: UITableViewDataSource {
+extension NearbyBusinessesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter.getNumberOfViewModels()
     }
@@ -90,7 +90,7 @@ extension NearbyPlacesViewController: UITableViewDataSource {
     }
 }
 
-extension NearbyPlacesViewController: UITableViewDelegate {
+extension NearbyBusinessesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.placeDidTap(at: indexPath.row)
     }
