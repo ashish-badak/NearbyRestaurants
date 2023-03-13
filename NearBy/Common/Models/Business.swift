@@ -14,10 +14,10 @@ struct NearbyPlaces: Codable {
 struct Business: Codable {
     let id: String
     let name: String
-    let imageURL: String
+    let imageURL: URL
     let rating: Double
     let reviewCount: Int
-    let price: String
+    let price: String?
     let phone: String
     let displayPhone: String
     let isClosed: Bool

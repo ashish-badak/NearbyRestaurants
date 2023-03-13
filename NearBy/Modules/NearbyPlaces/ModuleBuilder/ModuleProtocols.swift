@@ -19,7 +19,10 @@ protocol NearbyPlacesInteractorProtocol: AnyObject {
 }
 
 protocol NearbyPlacesPresenterProtocol: AnyObject {
-    // - TODO: Define presenter requirements
+    func viewDidLoad()
+    func placeDidTap(at index: Int)
+    func getNumberOfViewModels() -> Int
+    func getViewModel(atIndex index: Int) -> NearbyPlaceViewModel
 }
 
 protocol NearbyPlacesRouterProtocol: AnyObject {
