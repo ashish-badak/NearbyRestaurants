@@ -20,6 +20,8 @@ final class NearbyPlacesViewController: UIViewController {
         return tableView
     }()
     
+    private lazy var activityIndicatorView =  ActivityStateViewController()
+
     private var presenter: NearbyPlacesPresenterProtocol
     
     init(presenter: NearbyPlacesPresenterProtocol) {
@@ -46,11 +48,15 @@ final class NearbyPlacesViewController: UIViewController {
 
 extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
     func showLoading() {
-        // - TODO: Show Loading
+        DispatchQueue.main.async {
+            self.add(childViewController: self.activityIndicatorView, parentView: self.view)
+        }
     }
     
     func hideLoading() {
-        // - TODO: Hide Loading
+        DispatchQueue.main.async {
+            self.activityIndicatorView.remove()
+        }
     }
     
     func showError(message: String) {
