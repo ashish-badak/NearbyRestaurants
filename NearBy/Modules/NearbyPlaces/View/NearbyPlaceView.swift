@@ -9,7 +9,7 @@ import UIKit
 
 typealias NearbyPlaceCardTableViewCell = CardTableViewCell<NearbyPlaceView>
 
-final class NearbyPlaceView: UIView, CardCellConfigurableView {
+final class NearbyPlaceView: UIView, CellConfigurableView {
     typealias ViewModel = NearbyPlaceViewModel
     
     private lazy var placeImageView: UIImageView = {

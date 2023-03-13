@@ -9,7 +9,7 @@ import UIKit
 
 final class NearbyPlacesModule {
     // - TODO: Accept dependancies inside build method as parameters
-    func build() -> UIViewController {
+    func build(navigationController: UINavigationController) -> UIViewController {
         let router = NearbyPlacesRouter()
         let interactor = NearbyPlacesInteractor(
             placeType: "restaurants",
@@ -24,6 +24,7 @@ final class NearbyPlacesModule {
         
         let controller = NearbyPlacesViewController(presenter: presenter)
         presenter.view = controller
+        router.navigationController = navigationController
         return controller
     }
 }

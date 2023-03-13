@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct NearbyPlaces: Codable {
+struct NearbyPlaces: Decodable {
     let businesses: [Business]
 }
 
-struct Business: Codable {
+struct Business: Decodable {
     let id: String
     let name: String
     let imageURL: URL
@@ -21,6 +21,7 @@ struct Business: Codable {
     let phone: String
     let displayPhone: String
     let isClosed: Bool
+    let weeklySchedule: [WeeklySchedule]?
 
     enum CodingKeys: String, CodingKey {
         case id, name, rating, price, phone
@@ -28,5 +29,6 @@ struct Business: Codable {
         case reviewCount = "review_count"
         case displayPhone = "display_phone"
         case isClosed = "is_closed"
+        case weeklySchedule = "hours"
     }
 }

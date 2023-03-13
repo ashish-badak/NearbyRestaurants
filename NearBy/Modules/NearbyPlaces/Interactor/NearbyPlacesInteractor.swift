@@ -43,4 +43,8 @@ final class NearbyPlacesInteractor: NearbyPlacesInteractorProtocol {
             return .failure(error)
         }
     }
+    
+    func getBusiness(atIndex index: Int) -> Business {
+        businesses[index]
+    }
 }

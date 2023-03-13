@@ -5,6 +5,14 @@
 //  Created by Ashish Badak on 12/03/23.
 //
 
-import Foundation
+import UIKit
 
-final class NearbyPlacesRouter: NearbyPlacesRouterProtocol {}
+final class NearbyPlacesRouter: NearbyPlacesRouterProtocol {
+    weak var navigationController: UINavigationController?
+    
+    func routeToPlaceDetailsScreen(businessId: String, businessName: String) {
+        let module = PlaceDetailsModule()
+        let controller = module.build(businessId: businessId, businessName: businessName)
+        navigationController?.pushViewController(controller, animated: true)
+    }
+}

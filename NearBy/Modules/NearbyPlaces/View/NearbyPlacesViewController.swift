@@ -43,6 +43,7 @@ final class NearbyPlacesViewController: UIViewController {
         view.addSubview(tableView)
         tableView.layoutConstraints()
         tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -86,5 +87,11 @@ extension NearbyPlacesViewController: UITableViewDataSource {
         let cell: NearbyPlaceCardTableViewCell = tableView.dequeueCell(for: indexPath)
         cell.mainView.setData(presenter.getViewModel(atIndex: indexPath.row))
         return cell
+    }
+}
+
+extension NearbyPlacesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.placeDidTap(at: indexPath.row)
     }
 }
