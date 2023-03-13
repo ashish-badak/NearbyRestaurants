@@ -1,5 +1,5 @@
 //
-//  PlaceReviewInfoViewModel.swift
+//  BusinessReviewInfoViewModel.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PlaceReviewInfoViewModel: PlaceDetailsInfoViewModel {
+final class BusinessReviewInfoViewModel: BusinessDetailsInfoViewModel {
     var title: String { "Reviews:" }
     var info: String { reviewCount }
     

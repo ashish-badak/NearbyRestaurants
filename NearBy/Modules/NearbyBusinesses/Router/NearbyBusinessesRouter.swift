@@ -10,8 +10,8 @@ import UIKit
 final class NearbyBusinessesRouter: NearbyBusinessesRouterProtocol {
     weak var navigationController: UINavigationController?
     
-    func routeToPlaceDetailsScreen(businessId: String, businessName: String) {
-        let module = PlaceDetailsModule()
+    func routeToBusinessDetailsScreen(businessId: String, businessName: String) {
+        let module = BusinessDetailsModule()
         let controller = module.build(businessId: businessId, businessName: businessName)
         navigationController?.pushViewController(controller, animated: true)
     }

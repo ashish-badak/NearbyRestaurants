@@ -15,12 +15,12 @@ struct NearbyBusinessesAPIService {
     }
     
     func fetchNearbyBusinesses(
-        placeType: String?,
+        businessType: String?,
         latitude: Double?,
         longitude: Double?
     ) async -> Result<NearbyBusinesses, Error> {
         let requestComponents = NearbyBusinessesNetworkRequestComponents(
-            placeType: placeType,
+            businessType: businessType,
             latitude: latitude,
             longitude: longitude
         )

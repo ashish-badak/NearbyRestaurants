@@ -16,7 +16,7 @@ final class NearbyBusinessesViewController: UIViewController {
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
-        tableView.register(NearbyPlaceCardTableViewCell.self)
+        tableView.register(NearbyBusinessCardTableViewCell.self)
         return tableView
     }()
     
@@ -84,7 +84,7 @@ extension NearbyBusinessesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: NearbyPlaceCardTableViewCell = tableView.dequeueCell(for: indexPath)
+        let cell: NearbyBusinessCardTableViewCell = tableView.dequeueCell(for: indexPath)
         cell.mainView.setData(presenter.getViewModel(atIndex: indexPath.row))
         return cell
     }
@@ -92,6 +92,6 @@ extension NearbyBusinessesViewController: UITableViewDataSource {
 
 extension NearbyBusinessesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.placeDidTap(at: indexPath.row)
+        presenter.businessDidTap(at: indexPath.row)
     }
 }

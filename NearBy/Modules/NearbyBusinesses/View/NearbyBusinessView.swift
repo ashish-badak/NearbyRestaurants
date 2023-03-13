@@ -1,5 +1,5 @@
 //
-//  NearbyPlaceView.swift
+//  NearbyBusinessView.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-typealias NearbyPlaceCardTableViewCell = CardTableViewCell<NearbyPlaceView>
+typealias NearbyBusinessCardTableViewCell = CardTableViewCell<NearbyBusinessView>
 
-final class NearbyPlaceView: UIView, CellConfigurableView {
-    typealias ViewModel = NearbyPlaceViewModel
+final class NearbyBusinessView: UIView, CellConfigurableView {
+    typealias ViewModel = NearbyBusinessViewModel
     
-    private lazy var placeImageView: UIImageView = {
+    private lazy var businessImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.constrain(height: 180)
@@ -69,10 +69,10 @@ final class NearbyPlaceView: UIView, CellConfigurableView {
     private func setupView() {
         backgroundColor = UIColor.Background.cards
         
-        addSubview(placeImageView)
-        placeImageView.constrainTop()
-        placeImageView.constrainLeading()
-        placeImageView.constrainTrailing()
+        addSubview(businessImageView)
+        businessImageView.constrainTop()
+        businessImageView.constrainLeading()
+        businessImageView.constrainTrailing()
         
         contentStackView.addArrangedSubview(titleLabel)
         contentStackView.addArrangedSubview(ratingLabel)
@@ -81,7 +81,7 @@ final class NearbyPlaceView: UIView, CellConfigurableView {
         addSubview(contentStackView)
         
         contentStackView.topAnchor.constraint(
-            equalTo: placeImageView.bottomAnchor,
+            equalTo: businessImageView.bottomAnchor,
             constant: 16
         ).isActive = true
         contentStackView.constrainLeading(bound: .view(16))
@@ -89,16 +89,16 @@ final class NearbyPlaceView: UIView, CellConfigurableView {
         contentStackView.constrainTrailing(bound: .view(16))
     }
     
-    func setData(_ viewModel: NearbyPlaceViewModel) {
+    func setData(_ viewModel: NearbyBusinessViewModel) {
         titleLabel.text = viewModel.name
         ratingLabel.text = viewModel.rating
         priceLabel.text = viewModel.price
         priceLabel.isHidden = viewModel.price == nil
         imageURL = viewModel.imageURL
         Task {
-            let (url, image) = await placeImageView.downloadImage(from: viewModel.imageURL)
+            let (url, image) = await businessImageView.downloadImage(from: viewModel.imageURL)
             if url == imageURL {
-                placeImageView.image = image
+                businessImageView.image = image
             }
         }
     }

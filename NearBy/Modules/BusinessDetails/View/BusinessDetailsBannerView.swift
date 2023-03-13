@@ -1,5 +1,5 @@
 //
-//  PlaceDetailsBannerView.swift
+//  BusinessDetailsBannerView.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 14/03/23.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-typealias PlaceDetailsBannerTableViewCell = TableViewCell<PlaceDetailsBannerView>
+typealias BusinessDetailsBannerTableViewCell = TableViewCell<BusinessDetailsBannerView>
 
-final class PlaceDetailsBannerView: UIView, CellConfigurableView {
-    typealias ViewModel = PlaceDetailBannerViewModel
+final class BusinessDetailsBannerView: UIView, CellConfigurableView {
+    typealias ViewModel = BusinessDetailBannerViewModel
     
     private var bannerImageView: UIImageView = {
         let imageView = UIImageView()
@@ -47,7 +47,7 @@ final class PlaceDetailsBannerView: UIView, CellConfigurableView {
         bottomContraint.priority = .init(rawValue: 999)
     }
     
-    func setData(_ viewModel: PlaceDetailBannerViewModel) {
+    func setData(_ viewModel: BusinessDetailBannerViewModel) {
         Task {
             let (_, image) = await bannerImageView.downloadImage(from: viewModel.imageURL)
             bannerImageView.image = image

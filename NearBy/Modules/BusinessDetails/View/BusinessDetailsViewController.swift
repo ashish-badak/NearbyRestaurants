@@ -1,5 +1,5 @@
 //
-//  PlaceDetailsViewController.swift
+//  BusinessDetailsViewController.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PlaceDetailsViewController: UIViewController {
+final class BusinessDetailsViewController: UIViewController {
     private var tableView: UITableView = {
         let tableView = UITableView()
         tableView.showsVerticalScrollIndicator = false
@@ -15,16 +15,16 @@ final class PlaceDetailsViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.register(PlaceDetailsBannerTableViewCell.self)
-        tableView.register(PlaceDetailsInfoTableViewCell.self)
+        tableView.register(BusinessDetailsBannerTableViewCell.self)
+        tableView.register(BusinessDetailsInfoTableViewCell.self)
         return tableView
     }()
     
     private lazy var activityIndicatorView =  ActivityStateViewController()
 
-    private var presenter: PlaceDetailsPresenterProtocol
+    private var presenter: BusinessDetailsPresenterProtocol
     
-    init(presenter: PlaceDetailsPresenterProtocol) {
+    init(presenter: BusinessDetailsPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -47,7 +47,7 @@ final class PlaceDetailsViewController: UIViewController {
 }
 
 
-extension PlaceDetailsViewController: PlaceDetailsViewProtocol {
+extension BusinessDetailsViewController: BusinessDetailsViewProtocol {
     func showLoading() {
         DispatchQueue.main.async {
             self.add(
@@ -74,14 +74,14 @@ extension PlaceDetailsViewController: PlaceDetailsViewProtocol {
         }
     }
     
-    func showPlaceDetails() {
+    func showBusinessDetails() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
         }
     }
 }
 
-extension PlaceDetailsViewController: UITableViewDataSource {
+extension BusinessDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.getNumberOfViewModels()
     }
@@ -89,9 +89,9 @@ extension PlaceDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let itemViewModel = presenter.getViewModel(atIndex: indexPath.row)
         
-        if let viewModel = itemViewModel as? PlaceDetailBannerViewModel {
+        if let viewModel = itemViewModel as? BusinessDetailBannerViewModel {
             return getBannerCell(for: indexPath, viewModel: viewModel)
-        } else if let viewModel = itemViewModel as? PlaceDetailsInfoViewModel {
+        } else if let viewModel = itemViewModel as? BusinessDetailsInfoViewModel {
             return getInfoCell(for: indexPath, viewModel: viewModel)
         }
         
@@ -100,18 +100,18 @@ extension PlaceDetailsViewController: UITableViewDataSource {
     
     private func getBannerCell(
         for indexPath: IndexPath,
-        viewModel: PlaceDetailBannerViewModel
-    ) -> PlaceDetailsBannerTableViewCell {
-        let cell: PlaceDetailsBannerTableViewCell = tableView.dequeueCell(for: indexPath)
+        viewModel: BusinessDetailBannerViewModel
+    ) -> BusinessDetailsBannerTableViewCell {
+        let cell: BusinessDetailsBannerTableViewCell = tableView.dequeueCell(for: indexPath)
         cell.setData(viewModel)
         return cell
     }
     
     private func getInfoCell(
         for indexPath: IndexPath,
-        viewModel: PlaceDetailsInfoViewModel
-    ) -> PlaceDetailsInfoTableViewCell {
-        let cell: PlaceDetailsInfoTableViewCell = tableView.dequeueCell(for: indexPath)
+        viewModel: BusinessDetailsInfoViewModel
+    ) -> BusinessDetailsInfoTableViewCell {
+        let cell: BusinessDetailsInfoTableViewCell = tableView.dequeueCell(for: indexPath)
         cell.setData(viewModel)
         return cell
     }

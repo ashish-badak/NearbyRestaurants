@@ -21,11 +21,11 @@ protocol NearbyBusinessesInteractorProtocol: AnyObject {
 
 protocol NearbyBusinessesPresenterProtocol: AnyObject {
     func viewDidLoad()
-    func placeDidTap(at index: Int)
+    func businessDidTap(at index: Int)
     func getNumberOfViewModels() -> Int
-    func getViewModel(atIndex index: Int) -> NearbyPlaceViewModel
+    func getViewModel(atIndex index: Int) -> NearbyBusinessViewModel
 }
 
 protocol NearbyBusinessesRouterProtocol: AnyObject {
-    func routeToPlaceDetailsScreen(businessId: String, businessName: String)
+    func routeToBusinessDetailsScreen(businessId: String, businessName: String)
 }
