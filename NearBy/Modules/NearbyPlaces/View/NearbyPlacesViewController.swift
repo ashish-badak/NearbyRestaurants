@@ -15,6 +15,8 @@ final class NearbyPlacesViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.separatorStyle = .none
+        tableView.register(NearbyPlaceCardTableViewCell.self)
         return tableView
     }()
     
@@ -38,6 +40,7 @@ final class NearbyPlacesViewController: UIViewController {
     private func setupView() {
         view.addSubview(tableView)
         tableView.layoutConstraints()
+        tableView.dataSource = self
     }
 }
 
@@ -59,5 +62,17 @@ extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
         }
+    }
+}
+
+extension NearbyPlacesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        presenter.getNumberOfViewModels()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: NearbyPlaceCardTableViewCell = tableView.dequeueCell(for: indexPath)
+        cell.mainView.setData(presenter.getViewModel(atIndex: indexPath.row))
+        return cell
     }
 }
