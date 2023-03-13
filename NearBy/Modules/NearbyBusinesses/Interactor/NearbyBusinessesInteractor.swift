@@ -1,5 +1,5 @@
 //
-//  NearbyPlacesInteractor.swift
+//  NearbyBusinessesInteractor.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 12/03/23.
@@ -7,19 +7,19 @@
 
 import Foundation
 
-final class NearbyPlacesInteractor: NearbyPlacesInteractorProtocol {
+final class NearbyBusinessesInteractor: NearbyBusinessesInteractorProtocol {
     private var businesses: [Business] = []
     
     let placeType: String?
     let latitude: Double?
     let longitude: Double?
-    private let service: NearbyPlacesAPIService
+    private let service: NearbyBusinessesAPIService
     
     init(
         placeType: String?,
         latitude: Double?,
         longitude: Double?,
-        service: NearbyPlacesAPIService = NearbyPlacesAPIService()
+        service: NearbyBusinessesAPIService = NearbyBusinessesAPIService()
     ) {
         self.placeType = placeType
         self.latitude = latitude
@@ -27,8 +27,8 @@ final class NearbyPlacesInteractor: NearbyPlacesInteractorProtocol {
         self.service = service
     }
     
-    func fetchNearbyPlaces() async -> Result<[Business], Error> {
-        let result = await service.fetchNearbyPlaces(
+    func fetchNearbyBusinesses() async -> Result<[Business], Error> {
+        let result = await service.fetchNearbyBusinesses(
             placeType: placeType,
             latitude: latitude,
             longitude: longitude

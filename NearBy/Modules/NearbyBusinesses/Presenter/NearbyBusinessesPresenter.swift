@@ -1,5 +1,5 @@
 //
-//  NearbyPlacesPresenter.swift
+//  NearbyBusinessesPresenter.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 12/03/23.
@@ -7,25 +7,25 @@
 
 import Foundation
 
-final class NearbyPlacesPresenter {
-    weak var view: NearbyPlacesViewProtocol?
-    let interactor: NearbyPlacesInteractorProtocol
-    let router: NearbyPlacesRouterProtocol
+final class NearbyBusinessesPresenter {
+    weak var view: NearbyBusinessesViewProtocol?
+    let interactor: NearbyBusinessesInteractorProtocol
+    let router: NearbyBusinessesRouterProtocol
     
     private var viewModels: [NearbyPlaceViewModel] = []
 
     init(
-        interactor: NearbyPlacesInteractorProtocol,
-        router: NearbyPlacesRouterProtocol
+        interactor: NearbyBusinessesInteractorProtocol,
+        router: NearbyBusinessesRouterProtocol
     ) {
         self.interactor = interactor
         self.router = router
     }
     
-    private func fetchNearbyPlaces() {
+    private func fetchNearbyBusinesses() {
         Task {
             view?.showLoading()
-            let result = await interactor.fetchNearbyPlaces()
+            let result = await interactor.fetchNearbyBusinesses()
             view?.hideLoading()
             
             switch result {
@@ -33,7 +33,7 @@ final class NearbyPlacesPresenter {
                 viewModels = businesses.map {
                     NearbyPlaceViewModel(business: $0)
                 }
-                view?.showNearbyPlaces()
+                view?.showNearbyBusinesses()
                 
             case .failure(let error):
                 var errorMessage: String
@@ -48,9 +48,9 @@ final class NearbyPlacesPresenter {
     }
 }
 
-extension NearbyPlacesPresenter: NearbyPlacesPresenterProtocol {
+extension NearbyBusinessesPresenter: NearbyBusinessesPresenterProtocol {
     func viewDidLoad() {
-        fetchNearbyPlaces()
+        fetchNearbyBusinesses()
     }
     
     func placeDidTap(at index: Int) {

@@ -1,5 +1,5 @@
 //
-//  NearbyPlacesModule.swift
+//  NearbyBusinessesModule.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 12/03/23.
@@ -7,22 +7,22 @@
 
 import UIKit
 
-final class NearbyPlacesModule {
+final class NearbyBusinessesModule {
     // - TODO: Accept dependancies inside build method as parameters
     func build(navigationController: UINavigationController) -> UIViewController {
-        let router = NearbyPlacesRouter()
-        let interactor = NearbyPlacesInteractor(
+        let router = NearbyBusinessesRouter()
+        let interactor = NearbyBusinessesInteractor(
             placeType: "restaurants",
             latitude: 37.786882,
             longitude: -122.399972
         )
     
-        let presenter = NearbyPlacesPresenter(
+        let presenter = NearbyBusinessesPresenter(
             interactor: interactor,
             router: router
         )
         
-        let controller = NearbyPlacesViewController(presenter: presenter)
+        let controller = NearbyBusinessesViewController(presenter: presenter)
         presenter.view = controller
         router.navigationController = navigationController
         return controller
