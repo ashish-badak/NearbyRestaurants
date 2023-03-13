@@ -54,6 +54,7 @@
 		1E454ED729BF677200BA718C /* ReusableTableViewDequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454ED629BF677200BA718C /* ReusableTableViewDequeuing.swift */; };
 		1E454ED929BF703D00BA718C /* ActivityStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */; };
 		1E454EDB29BF708200BA718C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454EDA29BF708200BA718C /* UIViewControllerExtension.swift */; };
+		1E454EDE29BF70C400BA718C /* ErrorStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E454EDD29BF70C400BA718C /* ErrorStateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		1E454ED629BF677200BA718C /* ReusableTableViewDequeuing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewDequeuing.swift; sourceTree = "<group>"; };
 		1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStateViewController.swift; sourceTree = "<group>"; };
 		1E454EDA29BF708200BA718C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		1E454EDD29BF70C400BA718C /* ErrorStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 		1E109BB829BDDB6700DC8CEB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1E454EDC29BF70B900BA718C /* StateControllers */,
 				1E454ECF29BF661C00BA718C /* View */,
 				1E109C0829BE5DF000DC8CEB /* Models */,
 			);
@@ -457,9 +460,17 @@
 			children = (
 				1E454ED029BF662B00BA718C /* CardView.swift */,
 				1E454ED229BF666D00BA718C /* CardTableViewCell.swift */,
-				1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1E454EDC29BF70B900BA718C /* StateControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E454EDD29BF70C400BA718C /* ErrorStateViewController.swift */,
+				1E454ED829BF703D00BA718C /* ActivityStateViewController.swift */,
+			);
+			path = StateControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +586,7 @@
 				1E109BF929BE555F00DC8CEB /* NetworkResponseValidator.swift in Sources */,
 				1E109BFF29BE58AC00DC8CEB /* NearbyPlacesQueryParamsProvider.swift in Sources */,
 				1E454ECC29BF62A300BA718C /* ImageStore.swift in Sources */,
+				1E454EDE29BF70C400BA718C /* ErrorStateViewController.swift in Sources */,
 				1E454EC829BF626B00BA718C /* ImageDownloader.swift in Sources */,
 				1E109BD629BE18C400DC8CEB /* NearbyPlacesPresenter.swift in Sources */,
 			);
