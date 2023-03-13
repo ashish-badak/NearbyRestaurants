@@ -54,7 +54,11 @@ extension NearbyPlacesPresenter: NearbyPlacesPresenterProtocol {
     }
     
     func placeDidTap(at index: Int) {
-        // - TODO: Use router to open details page
+        let business = interactor.getBusiness(atIndex: index)
+        router.routeToPlaceDetailsScreen(
+            businessId: business.id,
+            businessName: business.name
+        )
     }
     
     func getNumberOfViewModels() -> Int {

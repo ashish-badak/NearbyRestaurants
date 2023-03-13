@@ -7,13 +7,17 @@
 
 import UIKit
 
-protocol CardCellConfigurableView {
+protocol CellConfigurableView {
     associatedtype ViewModel
     func setData(_ viewModel: ViewModel)
     func prepareForReuse()
 }
 
-class CardTableViewCell<View: UIView & CardCellConfigurableView>: UITableViewCell {
+extension CellConfigurableView {
+    func prepareForReuse() { }
+}
+
+class CardTableViewCell<View: UIView & CellConfigurableView>: UITableViewCell {
     private lazy var cardView: CardView = {
         let view = CardView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -37,6 +41,7 @@ class CardTableViewCell<View: UIView & CardCellConfigurableView>: UITableViewCel
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         mainView.prepareForReuse()
     }
     

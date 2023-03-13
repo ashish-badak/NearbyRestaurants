@@ -1,13 +1,13 @@
 //
-//  NearbyPlacesViewController.swift
+//  PlaceDetailsViewController.swift
 //  NearBy
 //
-//  Created by Ashish Badak on 12/03/23.
+//  Created by Ashish Badak on 13/03/23.
 //
 
 import UIKit
 
-final class NearbyPlacesViewController: UIViewController {
+final class PlaceDetailsViewController: UIViewController {
     private var tableView: UITableView = {
         let tableView = UITableView()
         tableView.showsVerticalScrollIndicator = false
@@ -15,16 +15,16 @@ final class NearbyPlacesViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.separatorStyle = .none
-        tableView.register(NearbyPlaceCardTableViewCell.self)
+        tableView.register(PlaceDetailsBannerTableViewCell.self)
+        tableView.register(PlaceDetailsInfoTableViewCell.self)
         return tableView
     }()
     
     private lazy var activityIndicatorView =  ActivityStateViewController()
 
-    private var presenter: NearbyPlacesPresenterProtocol
+    private var presenter: PlaceDetailsPresenterProtocol
     
-    init(presenter: NearbyPlacesPresenterProtocol) {
+    init(presenter: PlaceDetailsPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -43,14 +43,17 @@ final class NearbyPlacesViewController: UIViewController {
         view.addSubview(tableView)
         tableView.layoutConstraints()
         tableView.dataSource = self
-        tableView.delegate = self
     }
 }
 
-extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
+
+extension PlaceDetailsViewController: PlaceDetailsViewProtocol {
     func showLoading() {
         DispatchQueue.main.async {
-            self.add(childViewController: self.activityIndicatorView, parentView: self.view)
+            self.add(
+                childViewController: self.activityIndicatorView,
+                parentView: self.view
+            )
         }
     }
     
@@ -71,27 +74,45 @@ extension NearbyPlacesViewController: NearbyPlacesViewProtocol {
         }
     }
     
-    func showNearbyPlaces() {
+    func showPlaceDetails() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
         }
     }
 }
 
-extension NearbyPlacesViewController: UITableViewDataSource {
+extension PlaceDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        presenter.getNumberOfViewModels()
+        return presenter.getNumberOfViewModels()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: NearbyPlaceCardTableViewCell = tableView.dequeueCell(for: indexPath)
-        cell.mainView.setData(presenter.getViewModel(atIndex: indexPath.row))
+        let itemViewModel = presenter.getViewModel(atIndex: indexPath.row)
+        
+        if let viewModel = itemViewModel as? PlaceDetailBannerViewModel {
+            return getBannerCell(for: indexPath, viewModel: viewModel)
+        } else if let viewModel = itemViewModel as? PlaceDetailsInfoViewModel {
+            return getInfoCell(for: indexPath, viewModel: viewModel)
+        }
+        
+        return UITableViewCell()
+    }
+    
+    private func getBannerCell(
+        for indexPath: IndexPath,
+        viewModel: PlaceDetailBannerViewModel
+    ) -> PlaceDetailsBannerTableViewCell {
+        let cell: PlaceDetailsBannerTableViewCell = tableView.dequeueCell(for: indexPath)
+        cell.setData(viewModel)
         return cell
     }
-}
-
-extension NearbyPlacesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.placeDidTap(at: indexPath.row)
+    
+    private func getInfoCell(
+        for indexPath: IndexPath,
+        viewModel: PlaceDetailsInfoViewModel
+    ) -> PlaceDetailsInfoTableViewCell {
+        let cell: PlaceDetailsInfoTableViewCell = tableView.dequeueCell(for: indexPath)
+        cell.setData(viewModel)
+        return cell
     }
 }

@@ -16,6 +16,7 @@ protocol NearbyPlacesViewProtocol: AnyObject {
 
 protocol NearbyPlacesInteractorProtocol: AnyObject {
     func fetchNearbyPlaces() async -> Result<[Business], Error>
+    func getBusiness(atIndex index: Int) -> Business
 }
 
 protocol NearbyPlacesPresenterProtocol: AnyObject {
@@ -26,5 +27,5 @@ protocol NearbyPlacesPresenterProtocol: AnyObject {
 }
 
 protocol NearbyPlacesRouterProtocol: AnyObject {
-    // - TODO: Define router requirements
+    func routeToPlaceDetailsScreen(businessId: String, businessName: String)
 }
