@@ -11,14 +11,14 @@ struct NearbyBusinessesNetworkRequestComponents: GetNetworkRequestComponents {
     var path: String { "/v3/businesses/search" }
     var parameters: Parameters {
         let queryParamsProvider = NearbyBusinessesQueryParamsProvider(
-            placeType: placeType,
+            businessType: businessType,
             latitude: latitude,
             longitude: longitude
         )
         return queryParamsProvider.data?.dictionary ?? [:]
     }
     
-    let placeType: String?
+    let businessType: String?
     let latitude: Double?
     let longitude: Double?
 }

@@ -1,5 +1,5 @@
 //
-//  PlaceDetailsAPIService.swift
+//  BusinessDetailsAPIService.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct PlaceDetailsAPIService {
+struct BusinessDetailsAPIService {
     private let restClient: RestClient
     
     init(restClient: RestClient = .shared) {
         self.restClient = restClient
     }
     
-    func fetchPlaceDetails(businessId: String) async -> Result<Business, Error> {
-        let requestComponents = PlaceDetailsNetworkRequestComponents(businessId: businessId)
+    func fetchBusinessDetails(businessId: String) async -> Result<Business, Error> {
+        let requestComponents = BusinessDetailsNetworkRequestComponents(businessId: businessId)
         return await restClient.fetch(using: requestComponents)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  PlaceOperatingHoursViewModel.swift
+//  BusinessOperatingHoursViewModel.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 13/03/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PlaceOperatingHoursViewModel: PlaceDetailsInfoViewModel {
+final class BusinessOperatingHoursViewModel: BusinessDetailsInfoViewModel {
     var title: String { "Operating Hours" }
     var info: String { operatingHours }
     

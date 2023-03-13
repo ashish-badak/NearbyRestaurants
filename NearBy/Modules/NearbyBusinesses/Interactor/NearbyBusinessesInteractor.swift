@@ -10,18 +10,18 @@ import Foundation
 final class NearbyBusinessesInteractor: NearbyBusinessesInteractorProtocol {
     private var businesses: [Business] = []
     
-    let placeType: String?
+    let businessType: String?
     let latitude: Double?
     let longitude: Double?
     private let service: NearbyBusinessesAPIService
     
     init(
-        placeType: String?,
+        businessType: String?,
         latitude: Double?,
         longitude: Double?,
         service: NearbyBusinessesAPIService = NearbyBusinessesAPIService()
     ) {
-        self.placeType = placeType
+        self.businessType = businessType
         self.latitude = latitude
         self.longitude = longitude
         self.service = service
@@ -29,7 +29,7 @@ final class NearbyBusinessesInteractor: NearbyBusinessesInteractorProtocol {
     
     func fetchNearbyBusinesses() async -> Result<[Business], Error> {
         let result = await service.fetchNearbyBusinesses(
-            placeType: placeType,
+            businessType: businessType,
             latitude: latitude,
             longitude: longitude
         )

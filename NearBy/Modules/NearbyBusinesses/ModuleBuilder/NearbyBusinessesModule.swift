@@ -12,7 +12,7 @@ final class NearbyBusinessesModule {
     func build(navigationController: UINavigationController) -> UIViewController {
         let router = NearbyBusinessesRouter()
         let interactor = NearbyBusinessesInteractor(
-            placeType: "restaurants",
+            businessType: "restaurants",
             latitude: 37.786882,
             longitude: -122.399972
         )

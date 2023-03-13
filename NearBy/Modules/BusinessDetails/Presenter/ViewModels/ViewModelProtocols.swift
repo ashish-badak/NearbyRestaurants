@@ -9,7 +9,7 @@ import Foundation
 
 protocol ItemViewModel { }
 
-protocol PlaceDetailsInfoViewModel: ItemViewModel {
+protocol BusinessDetailsInfoViewModel: ItemViewModel {
     var title: String { get }
     var info: String { get }
 }

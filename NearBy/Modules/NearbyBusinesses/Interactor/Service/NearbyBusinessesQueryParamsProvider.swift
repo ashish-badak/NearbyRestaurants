@@ -8,18 +8,18 @@
 import Foundation
 
 final class NearbyBusinessesQueryParamsProvider: Encodable {
-    let placeType: String?
+    let businessType: String?
     let latitude: Double?
     let longitude: Double?
     
-    init(placeType: String?, latitude: Double?, longitude: Double?) {
-        self.placeType = placeType
+    init(businessType: String?, latitude: Double?, longitude: Double?) {
+        self.businessType = businessType
         self.latitude = latitude
         self.longitude = longitude
     }
     
     enum CodingKeys: String, CodingKey {
-        case placeType = "term"
+        case businessType = "term"
         case latitude
         case longitude
     }

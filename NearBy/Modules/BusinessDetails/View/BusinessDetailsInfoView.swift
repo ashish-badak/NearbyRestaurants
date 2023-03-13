@@ -1,5 +1,5 @@
 //
-//  PlaceDetailsInfoView.swift
+//  BusinessDetailsInfoView.swift
 //  NearBy
 //
 //  Created by Ashish Badak on 14/03/23.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-typealias PlaceDetailsInfoTableViewCell = TableViewCell<PlaceDetailsInfoView>
+typealias BusinessDetailsInfoTableViewCell = TableViewCell<BusinessDetailsInfoView>
 
-final class PlaceDetailsInfoView: UIView, CellConfigurableView {
-    typealias ViewModel = PlaceDetailsInfoViewModel
+final class BusinessDetailsInfoView: UIView, CellConfigurableView {
+    typealias ViewModel = BusinessDetailsInfoViewModel
  
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -65,7 +65,7 @@ final class PlaceDetailsInfoView: UIView, CellConfigurableView {
         )
     }
     
-    func setData(_ viewModel: PlaceDetailsInfoViewModel) {
+    func setData(_ viewModel: BusinessDetailsInfoViewModel) {
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.info
     }

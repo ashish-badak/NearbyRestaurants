@@ -12,7 +12,7 @@ final class NearbyBusinessesPresenter {
     let interactor: NearbyBusinessesInteractorProtocol
     let router: NearbyBusinessesRouterProtocol
     
-    private var viewModels: [NearbyPlaceViewModel] = []
+    private var viewModels: [NearbyBusinessViewModel] = []
 
     init(
         interactor: NearbyBusinessesInteractorProtocol,
@@ -31,7 +31,7 @@ final class NearbyBusinessesPresenter {
             switch result {
             case .success(let businesses):
                 viewModels = businesses.map {
-                    NearbyPlaceViewModel(business: $0)
+                    NearbyBusinessViewModel(business: $0)
                 }
                 view?.showNearbyBusinesses()
                 
@@ -53,9 +53,9 @@ extension NearbyBusinessesPresenter: NearbyBusinessesPresenterProtocol {
         fetchNearbyBusinesses()
     }
     
-    func placeDidTap(at index: Int) {
+    func businessDidTap(at index: Int) {
         let business = interactor.getBusiness(atIndex: index)
-        router.routeToPlaceDetailsScreen(
+        router.routeToBusinessDetailsScreen(
             businessId: business.id,
             businessName: business.name
         )
@@ -65,7 +65,7 @@ extension NearbyBusinessesPresenter: NearbyBusinessesPresenterProtocol {
         return viewModels.count
     }
     
-    func getViewModel(atIndex index: Int) -> NearbyPlaceViewModel {
+    func getViewModel(atIndex index: Int) -> NearbyBusinessViewModel {
         return viewModels[index]
     }
 }
